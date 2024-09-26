@@ -1,0 +1,25 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiAppCrud.Views.OrdenEditPage">
+
+    <StackLayout Padding="10">
+
+        <!-- Campo para ingresar el Nombre de la orden -->
+        <Label Text="Nombre de la Orden" />
+        <Entry x:Name="NombreEntry" Placeholder="Ingrese el nombre de la orden" />
+
+        <!-- DatePicker para seleccionar la Fecha -->
+        <Label Text="Fecha de la Orden" />
+        <DatePicker x:Name="FechaPicker" />
+
+        <!-- Picker para seleccionar un Producto -->
+        <Label Text="Seleccione un Producto" />
+        <Picker x:Name="ProductoPicker" />
+
+        <!-- Botón para Guardar -->
+     
+        
+        <Button Text="Guardar" Clicked="OnSaveClicked" />
+
+    </StackLayout>
+</ContentPage>
